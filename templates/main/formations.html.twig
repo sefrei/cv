@@ -1,0 +1,62 @@
+{# templates/main/formations.html.twig #}
+
+{% extends 'base.html.twig' %}
+{% block body %}
+
+<div class="container">
+<div class="title">
+  <h2>formations</h2>
+</div>
+  <div class="row">
+    <div class="col-12 col-md-8 text">
+        <div class="paragraph">
+            <div class="date">
+                2017
+            </div>
+            <h3>Développeuse web avec l'organisme <a href="https://oclock.io/">O’clock</a>
+            </h3>
+            <p>
+        Spécialisation POO php, Symfony.
+        Réalisation d’une application Agenda pour une mjc Symfony/React en
+        équipe pour le projet de fin d’étude. Base de donnée, notification d’absences
+        prof/élèves, enregistrement automatique de toutes le leçons de l’année en
+        cours, ajout d’observations pour un cours... à voir sur <a href="http://mjc.hugolo.fr/">mjc.hugolo.fr</a>  :
+        login/password : admin/admin
+            </p>
+        </div>
+        <div class="paragraph">
+            <div class="date">
+                2011
+            </div>
+            <h3>Contrat pro Webmaster,  <a href="http://www.adomm.fr/">Adamm formation</a>
+            </h3>
+            <p>
+        Html, css, php et ActionScript
+        Les bases de la création d'un site simple en php en formation et le déploiement d'un site Prestashop avec intégration par lot csv,
+         référencement et la modification de modules.
+            </p>
+        </div>
+        <div class="paragraph">
+            <div class="date">
+                1999
+            </div>
+            <h3>Niveau bac littéraire option Cinéma-Audiovisuel  <a href="http://www.lyc-lecastel.fr/cinema-audiovisuel/">Lycée Le Castel</a>
+            </h3>
+            <p>
+                N'ayant pas obtenu mon bac, je ne vais pas m'attarder sur cette période de ma vie, mais juste dire que j'ai appris
+                ici l'écriture de scénario, la prise de vue, et le montage vidéo. Réalisation de courts métrages pour le bac.
+            </p>
+        </div>
+
+
+    </div>
+
+    <div class="col-12 col-md-4 image">
+     <img src="{{ asset('images/tonneau2.png') }}" alt="tonneau">
+    </div>
+  </div>
+</div>
+
+
+
+{% endblock %}

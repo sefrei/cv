@@ -1,0 +1,13 @@
+#footer {
+    position: relative;;
+    top: 0;
+    padding: 1rem;
+    text-align: center;
+}
+
+#footer p {
+    color: RGBA(204,204,204,100);;
+    padding-top: 0.3em;
+    text-align: center;
+    height: 20px;
+}

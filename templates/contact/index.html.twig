@@ -1,0 +1,29 @@
+{# templates/contact/contact.html.twig #}
+
+{% extends 'base.html.twig' %}
+{% block body %}
+
+<div class="container">
+<div class="title">
+  <h2>contact</h2>
+</div>
+  <div class="row">
+
+    <div class="col-12 col-md-8 text">
+    {{ form_start(our_form) }}
+    {{ form_widget(our_form) }}
+
+     <input type="submit" value="Envoyer" class="btn btn-success" />
+    {{ form_end(our_form) }}
+    </div>
+
+     <div class="col-12 col-md-4 image <!--rotate-->">
+    <!-- <p>N'hésitez pas à m'envoyer un message, je vous répondrez dans les plus brefs délais</p> -->
+     <img src="{{ asset('images/lanterne2.png') }}" alt="lanterne">
+    </div>
+  </div>
+</div>
+
+
+
+{% endblock %}

@@ -1,0 +1,109 @@
+{# templates/main/portfolio.html.twig #}
+
+{% extends 'base.html.twig' %}
+{% block body %}
+<!-- Modal -->
+<!-- Large modal -->
+
+
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h4 class="modal-title" id="gridModalLabel">Agenda pour une mjc avec notifications d'absence</h4>
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+		</div>
+
+        <!-- <div class="container"> -->
+        <div class="row modal-row">
+            <div class="col-12 col-md-8 image">
+                <img class="card-img-top" src="images/agenda.png" alt="Agenda">
+            </div>
+            <div class="col-12 col-md-4 text">
+            <p><span class="badge badge-secondary bold">Date : </span> 2017 </p>
+            <p><span class="badge badge-secondary bold">Objectif : </span> Proposer un agenda clair aux adhérents et faire le lien entre les profs et élèves d'une mjc </p>
+            <p><span class="badge badge-secondary bold">Stack utilisé : </span> Symfony pour le back et Réact pour le front, le tout lié avec Ajax </p>
+            <p><span class="badge badge-secondary bold">Outils utilisés </span> Doctrine, Twig, Git, Slack </p>
+            <p><span class="badge badge-secondary bold">Lien et logs : </span> Vous pouvez vous connecter en tant qu'admin sur <a href="http://mjc.hugolo.fr/">mjc.hugolo.fr</a></p>
+            </div>
+        </div>
+        <!-- </div> -->
+    </div>
+  </div>
+</div>
+
+
+<!-- Container -->
+<div class="container">
+<div class="title">
+  <h2>portfolio</h2>
+</div>
+  <!-- <div class="row">
+    <div class="col-12 col-md-8 text"> -->
+
+    <!-- Card -->
+        <div class="card float-left">
+  <img class="card-img-top" src="images/agenda.png" alt="Agenda">
+  <div class="card-body">
+    <h3 class="card-title">Agenda mjc</h3>
+    <p class="card-text">Application de fin d'étude Symfony/Réact</p>
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Plus d'infos</button>
+  </div>
+ </div>
+
+ <!-- Card -->
+     <div class="card float-left">
+<img class="card-img-top" src="images/stickers/publishop2013.png" alt="Agenda">
+<div class="card-body">
+ <h3 class="card-title">Module PHP</h3>
+ <p class="card-text">Achat stickers personnalisés en ligne</p>
+ <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Plus d'infos</button>
+</div>
+</div>
+
+<!-- Card -->
+    <div class="card float-left">
+<img class="card-img-top" src="images/agenda.png" alt="Agenda">
+<div class="card-body">
+<h3 class="card-title">Site prestashop</h3>
+<p class="card-text">Installation et imports en masse de produits via csv</p>
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Plus d'infos</button>
+</div>
+</div>
+
+<!-- Card -->
+    <div class="card float-left">
+<img class="card-img-top" src="images/agenda.png" alt="Agenda">
+<div class="card-body">
+<h3 class="card-title">Site PHP</h3>
+<p class="card-text">Replay, site pour une association</p>
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Plus d'infos</button>
+</div>
+</div>
+
+    <!--<p>
+      Conception d'une application en php, avec base de donnée relationnelle. Programmation orientée objet avec Symfony.
+      Connaissance de Prestashop et de wordPress.
+    </p>
+    <p>
+        Connaissance de la chaîne graphique, relecture, corrections clients.
+        Bonne capacité à travailler dans le stress, avec des délais.
+      Mise en page avec InDesign, gestion des feuilles de style imbriquées et automatisation avec GREP.
+      Vous pouvez voir quelques unes de mes mises en page <a href="http://www.freifrei.fr">ici</a>.
+      Gestion des pdf pour print ou web. Photoshop : retouches photos, détourage, optimisation.
+      Tracés illustrator.
+    </p>
+    <p>
+       Mise à jour de bases de données, scripts out
+    </p>
+    </div> -->
+
+    <!-- <div class="col-12 col-md-4 image">
+     <img src="{{ asset('images/competences.svg') }}" alt="competences">
+    </div>
+  </div> -->
+</div>
+
+
+
+{% endblock %}

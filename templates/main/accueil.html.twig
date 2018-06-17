@@ -1,0 +1,38 @@
+{# templates/main/accueil.html.twig #}
+
+{% extends 'base.html.twig' %}
+{% block body %}
+
+
+<div class="container">
+<div class="title">
+  <h2>accueil</h2>
+</div>
+  <div class="row">
+    <div class="col-12 col-md-8 text">
+        <p>
+          Après avoir travaillé 7 ans dans une imprimerie et un studio de création, j'ai décidé de changer pour passer du côté print
+          au côté web. La recherche d'optimisation m'a forcé à m'intéresser à l'automatisation et c'est de là
+          que mon envie de me lancer dans la programmation est arrivée. D'un peu d'ActionScript, je suis vite passée à l'html et le css
+          via Dreamweaver tout d'abord, puis au php procédural.
+        </p>
+        <p>
+            La vie m'a par la suite donné 2 enfants (vous pourrez admirer leurs &oelig;uvres sur ce site)
+            puis j'ai eu l'opportunité de faire une nouvelle formation
+            en téléprésentiel. J'ai donc eu la chance de faire partie de la première promotion O'Clock, Big Bang.
+            Un vrai plus d'apprendre de chez soit :
+            pas de problème de transport donc moins de stress, mois de temps perdu,  la possibilité d'aller chercher ma fille à l'école et tout ça en apprenant à coder.
+            Pour une certaine logique et comme je connaissait déjà un peu le php, j'ai décidé de me spécialiser en POO avec Symfony,
+            et je ne le regrette pas!
+        </p>
+    </div>
+
+    <div class="col-12 col-md-4 image">
+     <img src="{{ asset('images/penseur-banane.png') }}" alt="graphiti">
+    </div>
+  </div>
+</div>
+
+
+
+{% endblock %}
