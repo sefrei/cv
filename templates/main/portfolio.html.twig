@@ -5,32 +5,11 @@
 <!-- Modal -->
 <!-- Large modal -->
 
+{{ include('modales/agenda.html.twig') }}
+{{ include('modales/stickers.html.twig') }}
+{{ include('modales/vannerie.html.twig') }}
+{{ include('modales/replay.html.twig') }}
 
-<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-        <div class="modal-header">
-            <h4 class="modal-title" id="gridModalLabel">Agenda pour une mjc avec notifications d'absence</h4>
-			<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-		</div>
-
-        <!-- <div class="container"> -->
-        <div class="row modal-row">
-            <div class="col-12 col-md-8 image">
-                <img class="card-img-top" src="images/agenda.png" alt="Agenda">
-            </div>
-            <div class="col-12 col-md-4 text">
-            <p><span class="badge badge-secondary bold">Date : </span> 2017 </p>
-            <p><span class="badge badge-secondary bold">Objectif : </span> Proposer un agenda clair aux adhérents et faire le lien entre les profs et élèves d'une mjc </p>
-            <p><span class="badge badge-secondary bold">Stack utilisé : </span> Symfony pour le back et Réact pour le front, le tout lié avec Ajax </p>
-            <p><span class="badge badge-secondary bold">Outils utilisés </span> Doctrine, Twig, Git, Slack </p>
-            <p><span class="badge badge-secondary bold">Lien et logs : </span> Vous pouvez vous connecter en tant qu'admin sur <a href="http://mjc.hugolo.fr/">mjc.hugolo.fr</a></p>
-            </div>
-        </div>
-        <!-- </div> -->
-    </div>
-  </div>
-</div>
 
 
 <!-- Container -->
@@ -38,47 +17,48 @@
 <div class="title">
   <h2>portfolio</h2>
 </div>
-  <!-- <div class="row">
-    <div class="col-12 col-md-8 text"> -->
+  <div class="row card-deck">
+    <!--<div class="col-12 col-md-8 text"> -->
 
     <!-- Card -->
-        <div class="card float-left">
+        <div class="col-md-5 card">
   <img class="card-img-top" src="images/agenda.png" alt="Agenda">
   <div class="card-body">
     <h3 class="card-title">Agenda mjc</h3>
     <p class="card-text">Application de fin d'étude Symfony/Réact</p>
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Plus d'infos</button>
+
   </div>
+  <button type="button" class="btn btn-primary btn-card" data-toggle="modal" data-target=".bd-example-modal-lg">Plus d'infos</button>
  </div>
 
  <!-- Card -->
-     <div class="card float-left">
+     <div class="col-md-5 card">
 <img class="card-img-top" src="images/stickers/publishop2013.png" alt="Agenda">
 <div class="card-body">
  <h3 class="card-title">Module PHP</h3>
  <p class="card-text">Achat stickers personnalisés en ligne</p>
- <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Plus d'infos</button>
 </div>
+<button type="button" class="btn btn-primary btn-card" data-toggle="modal" data-target=".sticker">Plus d'infos</button>
 </div>
 
 <!-- Card -->
-    <div class="card float-left">
-<img class="card-img-top" src="images/agenda.png" alt="Agenda">
+    <div class="col-md-5 card">
+<img class="card-img-top" src="images/vannerie.png" alt="la vannerie d'aujourd'hui">
 <div class="card-body">
 <h3 class="card-title">Site prestashop</h3>
 <p class="card-text">Installation et imports en masse de produits via csv</p>
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Plus d'infos</button>
 </div>
+<button type="button" class="btn btn-primary btn-card" data-toggle="modal" data-target=".vannerie">Plus d'infos</button>
 </div>
 
 <!-- Card -->
-    <div class="card float-left">
-<img class="card-img-top" src="images/agenda.png" alt="Agenda">
+    <div class="col-md-5 card">
+<img class="card-img-top" src="images/replay/articles.png" alt="Agenda">
 <div class="card-body">
 <h3 class="card-title">Site PHP</h3>
 <p class="card-text">Replay, site pour une association</p>
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Plus d'infos</button>
 </div>
+<button type="button" class="btn btn-primary btn-card" data-toggle="modal" data-target=".replay">Plus d'infos</button>
 </div>
 
     <!--<p>

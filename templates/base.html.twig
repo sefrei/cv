@@ -1,44 +1,45 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>{% block title %}Séverine Coyer{% endblock %}</title>
 
-<link href="{{ asset('css/cv.css') }}" rel="stylesheet" />
-<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" />
-<link href="{{ asset('css/theme.css') }}" rel="stylesheet" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}Séverine Coyer{% endblock %}</title>
 
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="{{ asset('css/reboot.css') }}" rel="stylesheet" />
+    <link href="{{ asset('css/header.css') }}" rel="stylesheet" />
+    <link href="{{ asset('css/cv.css') }}" rel="stylesheet" />
+    <link href="{{ asset('css/footer.css') }}" rel="stylesheet" />
 
-<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet" />
-<link href="https://fonts.googleapis.com/css?family=Fira+Sans:900" rel="stylesheet">
-      {% block stylesheets %}{% endblock %}
-    </head>
-    <body>
-        <div class="intro {% if app.request.get('_route')=='index' %} rotate introduction{% endif %}">
-            <img src="{{ asset('images/drawing2.svg') }}" alt="rouage">
-        </div>
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:900" rel="stylesheet"> {% block stylesheets %}{% endblock %}
+</head>
 
-      <div id="main-container">
+<body>
+    <div class="intro rotate introduction">
+         <img src="{{ asset('images//drawing2.svg') }}" alt="rouage">
+    </div>
 
-            {% include 'flash_messages.html.twig' %}
+    <div id="main-container">
+
+        {% include 'flash_messages.html.twig' %}
 
         <!-- Header -->
-         {{ include('main/header.html.twig') }}
+        {{ include('main/header.html.twig') }}
 
         <!-- Content -->
         {% block body %}{% endblock %}
 
         <!-- Footer  -->
 
-      </div>
-{{ include('main/footer.html.twig') }}
+    </div>
+    {{ include('main/footer.html.twig') }}
 
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    {% block javascripts %}{% endblock %}
+</body>
 
-<script
-  src="https://code.jquery.com/jquery-3.2.1.min.js"
-  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-  crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-  {% block javascripts %}{% endblock %}
-    </body>
 </html>
