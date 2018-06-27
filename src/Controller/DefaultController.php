@@ -4,6 +4,7 @@ namespace App\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\HttpFoundation\ResponseHeaderBag;
 use Symfony\Component\Routing\Annotation\Route;
 
 class DefaultController extends Controller
@@ -91,6 +92,7 @@ class DefaultController extends Controller
             public function downloadAction()
             {
                 // send the file contents and force the browser to download it
-                return $this->file('download/Severine_Coyer_2018H.pdf');
+                $pdfPath = 'download/Severine_Coyer_2018H.pdf';
+                return $this->file($pdfPath, 'sample.pdf', ResponseHeaderBag::DISPOSITION_INLINE);
             }
 }
