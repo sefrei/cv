@@ -86,10 +86,10 @@ class DefaultController extends Controller
               }
 
               /**
-               *@Route("/download", name="download")
+               *@Route("/download-cv", name="download-cv")
                * @return File
                */
-            public function downloadAction()
+            public function downloadCvAction()
             {
                 // send the file contents and force the browser to download it
                 $pdfPath = 'download/Severine_Coyer_2018H.pdf';
