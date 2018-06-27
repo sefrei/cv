@@ -83,4 +83,14 @@ class DefaultController extends Controller
 
                   return $this->render('main/portfolio.html.twig');
               }
+
+              /**
+               *@Route("/download", name="download")
+               * @return File
+               */
+            public function downloadAction()
+            {
+                // send the file contents and force the browser to download it
+                return $this->file('download/Severine_Coyer_2018H.pdf');
+            }
 }
