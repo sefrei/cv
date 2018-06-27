@@ -1,0 +1,64 @@
+
+body {
+    position: relative;
+    background-color: black!important;
+    color: black;
+    min-height: 100%;
+}
+
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+
+
+h3 {
+    font-size: 1.6rem!important;
+}
+
+
+.navbar-dark .navbar-nav .nav-link {
+    padding-left: 2em;
+  }
+
+a #navbarDropdown {
+    color: white;
+}
+
+#my-name h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 2em;
+  text-align: center;
+  z-index: 10;
+  left:50%;
+  top: 1em;
+}
+
+
+.intro {
+    z-index: 4;
+    right: -119px;
+    bottom: -119px;
+    position: fixed;
+    animation-name: spin;
+    transform-origin: 50% 50%;
+}
+
+.rotate {
+    animation-name: spin;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-timing-function: cubic-bezier(.50,.62,.08,.5);
+}
+
+@keyframes spin {
+       from {
+           transform: rotate(0deg);
+           /* transform-origin: bottom; */
+       } to {
+           transform: rotate(45deg);
+       }
+   }
