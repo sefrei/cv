@@ -21,14 +21,14 @@ class ContactController extends AbstractController
            $contactFormData = $form->getData();
            $message = (new \Swift_Message('Un mail de '.$contactFormData['name']))
                ->setFrom([$contactFormData['email']  => 'Frei Frei'])
-               ->setTo('secoy@live.com')
+               ->setTo('severine.coyer@hugolo.fr')
                ->setCharset('utf-8')
                ->setContentType('text/html')
                ->setBody($this->renderView('email/swift.html.twig',
                    [
                        'mail' => $contactFormData,
                    ]));
-            $message->attach(\Swift_Attachment::fromPath('images/SevCoy.svg')->setFilename('severine.svg'));
+            // $message->attach(\Swift_Attachment::fromPath('images/SevCoy.svg')->setFilename('severine.svg'));
 
            $mailer->send($message);
 
