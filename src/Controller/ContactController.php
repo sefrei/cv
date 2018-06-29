@@ -10,6 +10,17 @@ use Symfony\Component\HttpFoundation\Request;
 class ContactController extends AbstractController
 {
     /**
+     *@Route("/email", name="email")
+     * @return Response
+     */
+      public function emailAction()
+      {
+
+          return $this->render('contact/email.html.twig');
+      }
+
+    
+    /**
      * @Route("/contact", name="contact")
      */
     public function index(Request $request, \Swift_Mailer $mailer)
