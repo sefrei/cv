@@ -19,7 +19,7 @@ class ContactController extends AbstractController
           return $this->render('contact/email.html.twig');
       }
 
-    
+
     /**
      * @Route("/contact", name="contact")
      */
@@ -41,9 +41,8 @@ class ContactController extends AbstractController
                    ]));
             // $message->attach(\Swift_Attachment::fromPath('images/SevCoy.svg')->setFilename('severine.svg'));
 
-           $mailer->send($message);
 
-           if ($mailer->send($message)) {
+           if ($mailer->send($message) == true) {
               $this->addFlash('success', 'Votre message a bien été envoyé!');
             } else {
               $this->addFlash('danger', 'Nous avons rencontré un problème, votre message n\'a pas pu être envoyé');
