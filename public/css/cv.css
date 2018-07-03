@@ -22,6 +22,8 @@
     font-weight: 700;
 }
 
+
+
 .image {
     margin-bottom: 0.3em;
 }
@@ -31,12 +33,12 @@ textarea {
 }
 
 .text {
-    padding: 0.5em;
-    font-size: 1.2em;
+    padding: 1.5em;
+    font-size: 1em;
     width: 100%;
 }
 
-.image img {
+.image img, ul {
     width: 100%;
 }
 
@@ -51,9 +53,6 @@ textarea {
     display: inline-grid;
 }
 
-ul {
-    width: 100%;
-}
 
 @media (min-width: 576px) and (max-width:800px) {
     .col-md-5.card {
@@ -126,7 +125,7 @@ ul {
     position: relative;
     border-radius: 10px;
     left: -1em;
-    top: -0.2em;
+    top: 0.3em;
     text-align: center;
     max-width: 88px;
     height: auto;

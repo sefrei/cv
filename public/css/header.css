@@ -17,6 +17,10 @@ h3 {
     font-size: 1.6rem!important;
 }
 
+.logo img {
+    width: 30px;
+    height: auto;
+}
 
 .navbar-dark .navbar-nav .nav-link {
     padding-left: 2em;
@@ -27,12 +31,21 @@ a #navbarDropdown {
 }
 
 #my-name h1 {
+    padding-bottom: 1em;
   font-family: 'Pacifico', cursive;
   font-size: 2em;
   text-align: center;
   z-index: 10;
   left:50%;
   top: 1em;
+}
+
+span.dev {
+    float: right;
+    font-size: 0.7em;
+    margin :  0.3em 1.5em 0 3em;
+    right: 50px;
+    color: #9b59b6;
 }
 
 
@@ -62,3 +75,26 @@ a #navbarDropdown {
            transform: rotate(45deg);
        }
    }
+
+
+
+@media (min-width: 375px) and (max-width:425px) {
+   span.dev{
+       margin-left: 6em;
+   }
+}
+@media (min-width: 425px) and (max-width:668px) {
+   #my-name h1 {
+       /* padding-bottom: 1em; */
+   }
+}
+
+@media (min-width: 768px) {
+   #my-name h1 {
+       text-align: left;
+       display: inline;
+       padding-left: 10px;
+       padding-bottom: 0
+       ;
+   }
+}
