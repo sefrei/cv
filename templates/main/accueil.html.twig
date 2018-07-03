@@ -1,40 +1,30 @@
-{# templates/main/accueil.html.twig #}
-
-{% extends 'base.html.twig' %}
-{% block body %}
+{# templates/main/accueil.html.twig #} {% extends 'base.html.twig' %} {% block body %}
 
 
 <div class="container">
-<div class="title">
-  <h2>accueil</h2>
-</div>
-  <div class="row">
-    <div class="col-md-8 text">
-        <p>
-          Après avoir travaillé 7 ans dans une imprimerie et un studio de création, j'ai décidé de changer pour passer du côté print
-          au côté web. La recherche d'optimisation m'a forcée à m'intéresser à l'automatisation et c'est de là
-          que mon envie de me lancer dans la programmation est arrivée. D'un peu d'ActionScript, je suis vite passée à l'html et le css
-          via Dreamweaver tout d'abord, puis au php procédural.
-        </p>
-        <p>
-            La vie m'a par la suite donné 2 enfants (vous pourrez admirer leurs &oelig;uvres sur ce site)
-            puis j'ai eu l'opportunité de faire une nouvelle formation
-            en téléprésentiel. J'ai donc eu la chance de faire partie de la première promotion O'Clock, Big Bang.
-            Un vrai plus d'apprendre de chez soit :
-            pas de problème de transport donc moins de stress, moins de temps perdu,  la possibilité d'aller chercher ma fille à l'école et tout ça en apprenant à coder.
-            Comme je connaissais déjà le php, j'ai décidé de me spécialiser en POO avec Symfony,
-            et je ne le regrette pas!
-        </p>
-        <p>
-            Je suis actuellement à la recherche d'un emploi. J'habite à Puteaux mais mon but est de déménager sous peu pour me remettre au vert!
-            N'hésitez pas à télécharger <a  href="{{ path('download-cv')}}">mon CV ici en pdf (727,0 kB)</a> .
-        </p>
+    <div class="title">
+        <h2>accueil</h2>
     </div>
+    <div class="row">
+        <div class="col-md-8 text">
+            <p>
+                Après avoir travaillé 7 ans dans une imprimerie et un studio de création, j'ai d'évoluer du print vers le web. La recherche d'optimisation m'a forcée à m'intéresser à l'automatisation et c'est de là que mon envie de me lancer dans la programmation est
+                arrivée. D'un peu d'ActionScript, je suis vite passée à l'html et le css via Dreamweaver tout d'abord, puis au php procédural.
+            </p>
+            <p>
+                La vie m'a par la suite donné deux beaux enfants (vous pourrez admirer leurs &oelig;uvres sur ce site) puis j'ai eu l'opportunité de faire une nouvelle formation en téléprésentiel. J'ai donc eu la chance de faire partie de la première promotion O'Clock,
+                Big Bang. Un vrai plus d'apprendre de chez-soi : pas de problème de transport donc moins de stress, moins de temps perdu, la possibilité d'aller chercher mes enfants à l'école et tout ça en apprenant à coder. Comme je connaissais déjà
+                le php, j'ai décidé de me spécialiser en POO avec Symfony, et je ne le regrette pas!
+            </p>
+            <p>
+                Je suis actuellement à la recherche d'un emploi. J'habite à Puteaux pour l'instant mais souhaite déménager sous peu pour rejoindre la province. N'hésitez pas à télécharger <a href="{{ path('download-cv')}}">mon CV ici en pdf (727,0 kB)</a>                .
+            </p>
+        </div>
 
-    <div class="col-md-4 image">
-     <img src="{{ asset('images/little_girl.png') }}" alt="dessin de petite fille">
+        <div class="col-md-4 image">
+            <img src="{{ asset('images/little_girl.png') }}" alt="dessin de petite fille">
+        </div>
     </div>
-  </div>
 </div>
 
 

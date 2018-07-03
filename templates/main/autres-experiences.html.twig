@@ -3,64 +3,62 @@
 {% extends 'base.html.twig' %}
 {% block body %}
 
-<div class="container">
-<div class="title">
-  <h2>expériences</h2>
-</div>
-  <div class="row">
-    <div class="col-md-8 text">
-        <div class="paragraph">
-            <div class="date">
-                2015
-            </div>
-            <h3>Assistante gestion flotte <a href="http://otis.com/">Otis</a>
-            </h3>
-            <p>
-        Déploiement flotte téléphonique. Paramétrage de Windowsphones avec l'application SOS pour les techniciens Otis France.
-            </p>
+    <div class="container">
+        <div class="title">
+            <h2>expériences</h2>
         </div>
-        <div class="paragraph">
-            <div class="date">
-                2011
-            </div>
-            <h3>Webmaster,  <a href="http://www.new-vox-langres.com/">Le new Vox</a>
-            </h3>
-            <p>
-        Accueil des clients, entretien des salles, gestion des KDM, caisse.
-            </p>
-        </div>
-        <div class="paragraph">
-            <div class="date">
-                2007 2011
-            </div>
-            <h3>Infographiste exe  <a href="http://www.ippac.fr">Ippac</a>
-            </h3>
-            <p>
-                N'ayant pas obtenu mon bac, je ne vais pas m'attarder sur cette période de ma vie, mais juste dire que j'ai appris
-                ici l'écriture de scénario, la prise de vue, et le montage vidéo. Réalisation de courts métrages pour le bac.
-            </p>
-        </div>
-        <div class="paragraph">
-            <div class="date">
-                2004 2007
-            </div>
-            <h3>Opérateur pao  <a href="http://www.imprimerie-chmpagne.fr">Imprimerie de Champagne</a>
-            </h3>
-            <p>
-                N'ayant pas obtenu mon bac, je ne vais pas m'attarder sur cette période de ma vie, mais juste dire que j'ai appris
-                ici l'écriture de scénario, la prise de vue, et le montage vidéo. Réalisation de courts métrages pour le bac.
-            </p>
-        </div>
+        <div class="row">
+            <div class="col-md-8 text">
+                <div class="paragraph">
+                    <div class="date">
+                        2015
+                    </div>
+                    <h3>Assistante gestion flotte
+                        <a href="http://otis.com/">Otis</a>
+                    </h3>
+                    <p>
+                        Déploiement flotte téléphonique. Paramétrage de Windowsphones avec l'application SOS pour les techniciens Otis France. Gestion des contraventions, bases de données Acces et Excel. Suivi factures téléphoniques, dépannages smartphones.
+                    </p>
+                </div>
+                <div class="paragraph">
+                    <div class="date">
+                        2011
+                    </div>
+                    <h3>Employée polyvalente,
+                        <a href="http://www.new-vox-langres.com/">Le new Vox</a>
+                    </h3>
+                    <p>
+                        Accueil des clients, entretien des salles, gestion des KDM, caisse.
+                    </p>
+                </div>
+                <div class="paragraph">
+                    <div class="date">
+                        2004
+                    </div>
+                    <h3>Régisseuse stagiaire
+                        <a href="https://www.dailymotion.com/video/x4c5p3m">La légende des 1000 étangs</a>
+                    </h3>
+                    <p>
+                        Film d'Alain Baptizet. Accueil des figurants, restauration, prises de vues pour le making off.
+                    </p>
+                </div>
+                <div class="paragraph">
+                    <div class="date">
+                        1999 2003
+                    </div>
+                    <h3>Menuisierie, Ets Coyer Marc
+                    </h3>
+                    <p>
+                        Sciage, ponçage, tournage, vernissage dans l'entreprise paternelle.
+                    </p>
+                </div>
 
+            </div>
 
+            <div class="col-md-4 image">
+                <img src="{{ asset('images/petitChaperon.png') }}" alt="dessin petit chaperon rouge">
+            </div>
+        </div>
     </div>
-
-    <div class="col-md-4 image">
-      <img src="{{ asset('images/petitChaperon.png') }}" alt="dessin petit chaperon rouge">
-    </div>
-  </div>
-</div>
-
-
 
 {% endblock %}
